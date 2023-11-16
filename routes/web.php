@@ -37,6 +37,13 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/laporan', function () {
+    return view ('laporan', [
+        "title" => "laporan",
+        "active" => "laporan"
+    ]);
+});
+
 Route::get('/posts', [PostController::class, 'index']);
 Route::get('/posts/{post:slug}', [PostController::class, 'show']);
 
