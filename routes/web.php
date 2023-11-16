@@ -37,13 +37,6 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/laporan', function () {
-    return view ('laporan', [
-        "title" => "laporan",
-        "active" => "laporan"
-    ]);
-});
-
 Route::get('/posts', [PostController::class, 'index']);
 Route::get('/posts/{post:slug}', [PostController::class, 'show']);
 
@@ -52,6 +45,44 @@ Route::get('/categories', function(){
         'title' => 'Post Categories',
         "active" => "categories",
         'categories' => category::all()
+    ]);
+});
+Route::get('/laporan', function(){
+    return view('laporan', [
+        'title' => 'Post laporan',
+        "active" => "laporan",
+        "image" => "logo ti baru (2).png"
+    ]);
+});
+Route::get('/lpp', function(){
+    return view('lpp', [
+        'title' => 'Post lpp',
+        "active" => "lpp",
+        "image" => "2sd.jpg",
+        "ime" => "2.jpg",
+        "im" => "titi.jpg",
+        "ini" => "ligi.jpg"
+    ]);
+});
+Route::get('/end', function(){
+    return view('end', [
+        'title' => 'Post end',
+        "active" => "end"
+    ]);
+});
+Route::get('/destgs', function(){
+    return view('destgs', [
+        'title' => 'Post destgs',
+        "active" => "destgs",
+        "image" => "vs.png",
+        "ime" => "wbn.png",
+        "im" => "xampp.png",
+        "aku" => "gb.jpeg",
+        "kaka" => "laragon.png",
+        "ini" => "tbl.png",
+        "lala" => "gbw.png",
+        "li" => "detail.png",
+        "la" => "control.png"
     ]);
 });
 

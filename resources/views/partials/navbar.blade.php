@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="/">CM Blog</a>
+        <a class="navbar-brand" href="/"><i class="bi bi-stars"> CM Blog</i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,17 +8,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{ $active === 'home' ? 'active' : ' ' }}" href="/">Home</a>
+                    <a class="nav-link {{ $active === 'home' ? 'active' : ' ' }}" href="/"><i class="bi bi-house-door-fill"> Home</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $active === 'about' ? 'active' : ' ' }}" href="/about">About</a>
+                    <a class="nav-link {{ $active === 'about' ? 'active' : ' ' }}" href="/about"><i class="bi bi-file-earmark-person-fill"> About</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $active === 'posts' ? 'active' : ' ' }}" href="/posts">Blog</a>
+                    <a class="nav-link {{ $active === 'posts' ? 'active' : ' ' }}" href="/posts"><i class="bi bi-chat-text"> Blog</i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ $active === 'categories' ? 'active' : ' ' }}"
-                        href="/categories">Categories</a>
+                        href="/categories"><i class="bi bi-bookmarks"> Categories</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ $active === 'laporan' ? 'active' : ' ' }}"
+                        href="/laporan"><i class="bi bi-book-half"> Laporan</i></a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
