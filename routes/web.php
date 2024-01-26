@@ -86,6 +86,13 @@ Route::get('/destgs', function(){
     ]);
 });
 
+Route::get('/logbook', function(){
+    return view('logbook', [
+        'title' => 'Post logbook',
+        "active" => "logbook"
+    ]);
+});
+
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);

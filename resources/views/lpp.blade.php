@@ -43,12 +43,21 @@
             <p><b>Logo :</b><img src="img/{{ $ini }}" width="200px" height="300px" alt=""></p>
 
             <footer class="blockquote-footer">PT. TUNAS JAYA SANUR adalah perusahaan yang  bergerak dalam bidang jasa kontraktor pertambangan, jasa penambangan umum, pemeliharaan dan perawatan peralatan.<cite title="Source Title"></cite></footer>
+            <footer class="blockquote-footer">PT. TUNAS JAYA SANUR memiliki visi yaitu, Menjadi perusahaan jasa konstruksi nasional yang kredibel serta pelayanan berkualitas dan dilandasi kerja yang prima dengan dukungan team work yang solid.<cite title="Source Title"></cite></footer>
+            <footer class="blockquote-footer">Dan misi sebagai berikut, Selalu siap mewujudkan ide dan desain konstruksi yang melebihi harapan pelanggan. Secara konsisten melakukan inovasi untuk peningkatan manajemen perusahaan. efektivitas kepemimpinan dan pengembangan kualitas sumber daya manusia. Menempatkan komitmen sebagai posisi penting dalam membangun hubungan jangka panjang yang saling menguntungkan dengan semua mitra dan Mengutamakan kesehatan, keselamatan dan kelestarian lingkungan.<cite title="Source Title"></cite></footer>
           </blockquote>
         </div>
       </div>
     </br>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <a href="/laporan" class="btn btn-primary mb-3">BACK</a>
-        <a href="/destgs" class="btn btn-primary mb-3">NEXT</a>
+        <ul class="pagination">
+            <li class="page-item active"><a class="page-link" href="laporan">1</a></li>
+            <li class="page-item active"><a class="page-link" href="lpp">2</a></li>
+            <li class="page-item active"><a class="page-link" href="logbook">3</a></li>
+            <li class="page-item active"><a class="page-link" href="destgs">4</a></li>
+            <li class="page-item active"><a class="page-link" href="end">5</a></li>
+        </ul>
+        <a href="/logbook" class="btn btn-primary mb-3">NEXT</a>
     </div>
 @endsection
